@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
 }
 
 .navbar {
@@ -38,7 +39,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #00bcd4;
+    color: dodgerblue;
 }
 
 .menu-toggle {
@@ -123,3 +124,21 @@ body {
     margin-top: 0px;
 }
 
+@media (max-width: 480px) {
+    .navbar ul li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li a span {
+        display: none;
+    }
+
+    .navbar ul li a i {
+        font-size: 24px;
+    }
+    .navbar{
+        width: 100%;
+
+    }
+}
