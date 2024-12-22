@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #fff;
+    background: linear-gradient(45deg, #5795aa, #fff);    
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-login{
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 235px;
+    margin: 0 auto;
+}
+
+.form-login h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-login input{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 8px black;
+}
+button{
+    background-color: dodgerblue;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 8px black;
+}
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.form-login a{
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    
+    .form-login {
+        width: 50%;
+        height: 50%;
+    }
+
+    .form-login h1 {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    .form-login input {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 17px;
+    }
+}
