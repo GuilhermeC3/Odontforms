@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OralCenter</title>
+    <link rel="stylesheet" href="../style/createaccount.css">
+</head>
+<body>
+    <div class="form-login">
+        <h1>OralCenter</h1>
+        <form id="createAccountForm" action="homepage.html" method="get">
+            <table>
+                <tr>
+                    <td><input type="text" name="nome" id="nome" placeholder="Nome" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="Email" id="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="senha" id="senha" placeholder="Senha" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="confirmsenha" id="confirmsenha" placeholder="Confirme sua senha" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button-container">
+                            <button type="button" id="createAccountButton">Criar conta</button>
+                        </div>
+                        <div class="alreadyhaveone"><a href="login.html">Já tenho uma conta</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div id="error-message" style="color: red;"></div></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="../javascript/createaccount.js"></script>
+</body>
+</html>
