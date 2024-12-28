@@ -69,11 +69,11 @@ button:hover{
     justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 830px) {
     
     .form-login {
-        width: 50%;
-        height: 50%;
+        width: 50%; 
+        height: auto;
     }
 
     .form-login h1 {
@@ -84,10 +84,15 @@ button:hover{
     .form-login input {
         padding: 15px;
         font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
     }
 
     button {
         padding: 15px;
         font-size: 17px;
+        margin-left: 10px;
+        margin-right: 10px
     }
 }
