@@ -10,16 +10,23 @@
     <link rel="stylesheet" href="../style/navbar.css">
 </head>
 <body>
-<nav class="navbar">
-    <div class="logo">OralCenter</div>
-    <ul>
-        <li><a href="homepage.html"><i class="fas fa-home"></i> <span>Home</span> </a></li>
-        <li><a href="novoprontuario.html"><i class="fas fa-file-medical"></i> <span>Novo Prontuário</span> </a></li>
-        <li><a href="prontuarios.html"><i class="fas fa-folder-open"></i> <span>Prontuários</span> </a></li>
-        <li><a href="stats.html"><i class="fas fa-chart-column"></i> <span>Estatísticas</span> </a></li>
-        <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> <span>Sair</span> </a></li>
-    </ul>
-    <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-</nav>
+    <nav class="navbar">
+        <div class="logo">OralCenter</div>
+        <ul>
+            <li><a href="homepage.html"><i class="fas fa-home"></i> <span>Home</span> </a></li>
+            <li><a href="novoprontuario.html"><i class="fas fa-file-medical"></i> <span>Novo Prontuário</span> </a></li>
+            <li><a href="prontuarios.html"><i class="fas fa-folder-open"></i> <span>Prontuários</span> </a></li>
+            <li><a href="stats.html"><i class="fas fa-chart-column"></i> <span>Estatísticas</span> </a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <i class="fas fa-user"></i> <span>Conta</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="config.html"><i class="fas fa-cog"></i> Configurações</a>
+                    <a href="index.html"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
 </body>
 </html>

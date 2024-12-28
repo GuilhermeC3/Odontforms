@@ -9,21 +9,4 @@ body {
     background-color: #fff;
     font-family: 'Monsterrat', sans-serif;
 }
-@media (max-width: 600px) {
-    .navbar ul li a {
-        display: flex;
-        align-items: center;
-    }
 
-    .navbar ul li a span {
-        display: none;
-    }
-
-    .navbar ul li a i {
-        font-size: 24px;
-    }
-    .navbar{
-        width: 100%;
-
-    }
-}

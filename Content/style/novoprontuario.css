@@ -16,19 +16,18 @@ body {
     margin: auto;
     padding-right: 15px;
     padding-left: 15px;
-    box-shadow: 1px 1px 15px black;
+    box-shadow: 1px 1px 8px black;
 }
 
 .form-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px 0;         
     background-color: #fff;
     border-radius: 8px;
     outline: none;
     border: none;
     font-weight: 600;
-    
 }
 
 .form-table th, .form-table td {
@@ -57,7 +56,7 @@ body {
     margin: auto;
 }
 
-.submit-btn {
+.submit-btn, .reset-btn {
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
@@ -65,11 +64,14 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 49%;
 }
 
-.submit-btn:hover {
-    background-color: #555;
+.submit-btn:hover, .reset-btn:hover {
+    color: dodgerblue;
+    transition: color 0.3s;
 }
+
 
 .preview-image {
     max-width: 200px;
@@ -79,10 +81,10 @@ body {
 
 .radio-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px; 
+    gap: 30px;
 }
-
 .radio-option {
     display: flex;
     align-items: center;
@@ -90,10 +92,10 @@ body {
 }
 
 .submit-btn-container {
-    text-align: right;
+    text-align: center;
 }
 
-.submit-btn {
+.submit-btn, .reset-btn {
     display: inline-block;
     margin-top: 0;
     box-shadow: 1px 1px 5px black;

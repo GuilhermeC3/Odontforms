@@ -5,7 +5,7 @@
     background-color: #333;
     padding: 10px 20px;
     color: #fff;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 8px black;
 }
 
 .navbar .logo {
@@ -22,7 +22,7 @@
     margin: 0 10px;
 }
 
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
@@ -36,4 +36,66 @@
     display: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: px;
+    padding-top: 10px;
+    right: 0;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .navbar ul li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li a span {
+        display: none;
+    }
+
+    .navbar ul li a i {
+        font-size: 24px;
+    }
+    .navbar{
+        width: 100%;
+
+    }
+
+    .navbar .dropdown span{
+        display: none;
+    }
+
+    .navbar .dropdown i{
+        font-size: 24px;
+    }
 }
