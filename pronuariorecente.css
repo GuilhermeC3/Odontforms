@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.prontuarios-recentes-container-container{
+    background-color: #fff;    
+    background: linear-gradient(45deg, #5795aa, #fff);    
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prontuarios-recentes-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prontuarios-recentes-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.prontuarios-recentes-container {
+    background-color: #fff; 
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    width: 90%; 
+    box-shadow: 1px 1px 15px black;
+}
+
+.prontuarios-recentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.prontuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 200px; 
+}
+
+.prontuario img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prontuario p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .prontuarios-recentes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .prontuario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 160px; 
+    }
+    .prontuario img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .prontuario p {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .prontuarios-recentes-container h1{
+        font-size: 30px;
+        margin-top: 90px;
+    }
+
+    .prontuarios-recentes-container{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #fff;
+    }
+}

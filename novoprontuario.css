@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
+}   
 
 body {
-    background-color: #fff;
+    background: linear-gradient(45deg, #5795aa, #fff);    
     font-family: 'Monsterrat', sans-serif;
 }
 
 .form-container{
     max-width: 800px;
     min-width: 320px;
-    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 30px;
     padding-right: 15px;
     padding-left: 15px;
-    box-shadow: 1px 1px 8px black;
+    box-shadow: 1px 1px 15px black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-top: 120px;
+    padding-top: 50px;
 }
 
 .form-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;         
+    margin-top: 60px;         
     background-color: #fff;
     border-radius: 8px;
     outline: none;
@@ -49,11 +58,6 @@ body {
     border-radius: 4px;
     width: 100%;
     outline: none;
-}
-
-.form-container {
-    max-width: 600px;
-    margin: auto;
 }
 
 .submit-btn, .reset-btn {
@@ -93,6 +97,7 @@ body {
 
 .submit-btn-container {
     text-align: center;
+    margin-top: 20px;
 }
 
 .submit-btn, .reset-btn {
@@ -103,20 +108,13 @@ body {
 }
 
 @media (max-width: 600px) {
-    .navbar ul li a {
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar ul li a span {
-        display: none;
-    }
-
-    .navbar ul li a i {
-        font-size: 24px;
-    }
-    .navbar{
+    .form-container {
         width: 100%;
-
+        margin-top: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .form-container h1 {
+        margin-top: 40px;
     }
 }
