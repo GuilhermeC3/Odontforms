@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Monsterrat', sans-serif;
+}
+
+.form-container{
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;         
+    background-color: #fff;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+
+.form-table th, .form-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.form-table th {
+    background-color: #f4f4f4;
+}
+
+.form-table input, .form-table select {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.submit-btn, .reset-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 49%;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+    color: dodgerblue;
+    transition: color 0.3s;
+}
+
+
+.preview-image {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+.submit-btn-container {
+    text-align: center;
+}
+
+.submit-btn, .reset-btn {
+    display: inline-block;
+    margin-top: 0;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .navbar ul li a {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li a span {
+        display: none;
+    }
+
+    .navbar ul li a i {
+        font-size: 24px;
+    }
+    .navbar{
+        width: 100%;
+
+    }
+}

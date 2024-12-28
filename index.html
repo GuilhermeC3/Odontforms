@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OralCenter</title>
+    <link rel="stylesheet" href="../Content/style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="form-login">
+        <h1>OralCenter</h1>
+        <form id="login-form" action="../Content/html/homepage.html" method="get">
+            <table>
+                <tr>
+                    <td><input type="text" name="Email" id="email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="senha" id="senha" placeholder="Senha"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="button-container">
+                            <button type="button" id="login">Entrar</button>
+                        </div>
+                        <div class="createaccount"><a href="../Content/html/createaccount.html">Criar uma conta</a></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div id="error-message" style="color: red;"></div></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="../Content/javascript/login.js"></script>
+</body>
+</html>
