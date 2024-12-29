@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-color: #fff;
-    background: linear-gradient(45deg, #5795aa, #fff);    
-    width: 100%;
-    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #5795aa, #fff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .form-login{
     background-color: #333;
