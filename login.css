@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-color: #fff;
-    background: linear-gradient(45deg, #5795aa, #fff);    
+    background: linear-gradient(to bottom,#5795aa, #fff);    
     width: 100%;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 .form-login{
     background-color: #333;
@@ -84,15 +84,15 @@ button:hover{
     .form-login input {
         padding: 15px;
         font-size: 18px;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
         width: auto;
     }
 
     button {
         padding: 15px;
         font-size: 17px;
-        margin-left: 10px;
-        margin-right: 10px
+        margin-left: 30px;
+        margin-right: 30px
     }
 }

@@ -64,11 +64,11 @@
                     <td><input type="cpf" name="cpf" placeholder="123.456.789.10"></td>
                 </tr>
                 <tr>
-                    <td>Selecionar imagem:</td>
+                    <td>Imagem do paciente:</td>
                     <td>
                         <input 
                             type="file" 
-                            id="imageUpload" 
+                            id="pacienteimg" 
                             accept="image/*" 
                             onchange="previewImage(event)"
                         >
@@ -82,63 +82,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Plano de Atendimento:</td>
+                    <td>Número de Atendimentos:</td>
                     <td>
-                        <input type="text" name="plano" placeholder="Plano de Atendimento">
+                        <input type="number" id="numAtendimentos" min="1" placeholder="Número de Atendimentos" value="1" oninput="generateFields()">
                     </td>
                 </tr>
                 <tr>
-                    <td>Procedimento Realizado:</td>
-                    <td>
-                        <input type="text" name="procedimentorealizado" placeholder="Procedimento">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Data de Atendimento:</td>
-                    <td><input type="date" name="data_atendimento"></td>
-                </tr>
-                <tr>
-                    <td>Método de pagamento:</td>
-                    <td>
-                        <select name="genero">
-                            <option value="">Selecione</option>
-                            <option value="pix">PIX</option>
-                            <option value="cartao">Cartão de Crédito</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Parcelas:</td>
-                    <td>
-                        <select name="parcelas" id="parcelas">
-                            <option value="1x">1x</option>
-                            <option value="1x">2x</option>
-                            <option value="1x">3x</option>
-                            <option value="1x">4x</option>
-                            <option value="1x">5x</option>
-                            <option value="1x">6x</option>
-                            <option value="1x">7x</option>
-                            <option value="1x">8x</option>
-                            <option value="1x">9x</option>
-                            <option value="1x">10x</option>
-                            <option value="1x">11x</option>
-                            <option value="1x">12x</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pagamento finalizado?</td>
-                    <td>
-                        <div class="radio-container">
-                            <div class="radio-option">
-                                <input type="radio" id="sim" name="pago">
-                                <label for="sim">Sim</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" id="nao" name="pago">
-                                <label for="nao">Não</label>
-                            </div>
-                        </div>
+                    <td colspan="2">
+                        <div id="dynamicFieldsContainer"></div>
                     </td>
                 </tr>
             </table>

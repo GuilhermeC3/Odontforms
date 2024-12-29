@@ -8,11 +8,11 @@
     padding: 10px 20px;
     color: #fff;
     box-shadow: 1px 1px 8px black;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;   
     font-family: 'Montserrat', sans-serif;
+    z-index: 1000;
 }
 
 .navbar .logo {
@@ -95,7 +95,8 @@
     }
     .navbar{
         width: 100%;
-
+        min-width: none;
+        box-shadow: 1px 1px 15px black;
     }
 
     .navbar .dropdown span{
@@ -104,5 +105,9 @@
 
     .navbar .dropdown i{
         font-size: 24px;
+    }
+
+    .navbar .logo{
+        font-size: 22px;
     }
 }
